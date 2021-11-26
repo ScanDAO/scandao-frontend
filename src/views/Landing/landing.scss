@@ -1,0 +1,10 @@
+@import "../../assets/styles/colors.scss";
+
+.landing-root {
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+    background: $base-color;
+    display: flex;
+    flex-direction: column;
+}
