@@ -18,7 +18,7 @@ export const busd = new StableBond({
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
         [Networks.BSC_MAINNET]: {
-            bondAddress: "0x17aE3F41ecA5Af6A593F11cE903B52955187DAA5",
+            bondAddress: "0x0b49c90BEf4912211F27e3Bab75d9036D71DB93C",
             reserveAddress: "0xe9e7cea3dedca5984780bafc599bd69add087d56",
         },
     },
@@ -33,7 +33,7 @@ export const wbnb = new CustomBond({
     reserveContractAbi: StableReserveContract,
     networkAddrs: {
         [Networks.BSC_MAINNET]: {
-            bondAddress: "0xefbcB4385ABE05b2568c2a880408aCBd5344052E",
+            bondAddress: "0xeE710F9CC7683f844a7dBc7416deE41010aAFc41",
             reserveAddress: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
         },
     },
@@ -48,8 +48,8 @@ export const busdScan = new LPBond({
     reserveContractAbi: LpReserveContract,
     networkAddrs: {
         [Networks.BSC_MAINNET]: {
-            bondAddress: "0x6bd06f244a782FCdbDA6Be075688C46E6A1dEe88",
-            reserveAddress: "0x5d587800ec35fec79fcf96f01406c94400bfd9a3",
+            bondAddress: "0xbD4e58e19c96CC9889375DC5A9Cc0309E430627D",
+            reserveAddress: "0xb418adb6548d7730915d0c6e54faf50967fb84cd",
         },
     },
     lpUrl: "https://www.traderjoexyz.com/#/pool/0xa367b40048d809b14405c96b9181cad1ecbdc96f/0xb54f16fB19478766A268F172C9480f8da1a7c9C3",
