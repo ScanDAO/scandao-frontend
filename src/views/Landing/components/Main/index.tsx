@@ -15,7 +15,7 @@ function Main() {
                         <p>Enter App</p>
                     </div>
                 </Link>
-                <Link href="https://ScanDAO.gitbook.io/ScanDAO/" target="_blank" rel="noreferrer">
+                <Link href="https://scandao.gitbook.io/scandao/" target="_blank" rel="noreferrer">
                     <div className="landing-main-btn">
                         <p>Documentation</p>
                     </div>
@@ -26,7 +26,7 @@ function Main() {
                 <p>ScanDAO</p>
             </div>
             <div className="landing-main-help-text-wrap">
-                <p>Tools for all your lambo wishes</p>
+                <p>Grow your wealth - stake and earn compunding interest</p>
             </div>
         </div>
     );

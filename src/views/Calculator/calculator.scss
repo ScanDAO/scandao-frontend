@@ -8,7 +8,7 @@
         z-index: 2;
 
         @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-            background: rgba(36, 39, 41, 0.1);
+            background: rgba(36, 39, 41, 1);
             backdrop-filter: blur(40px);
         }
 

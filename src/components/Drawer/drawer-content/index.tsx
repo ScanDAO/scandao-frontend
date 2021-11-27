@@ -123,7 +123,7 @@ function NavContent() {
                     >
                         <div className="dapp-menu-item">
                             <img alt="" src={LamboIcon} />
-                            <p>Wen Lambo</p>
+                            <p>Profit Calculator</p>
                         </div>
                     </Link>
                 </div>
