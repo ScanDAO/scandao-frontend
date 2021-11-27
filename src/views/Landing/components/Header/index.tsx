@@ -26,11 +26,11 @@ function Header() {
                         {({ TransitionProps }) => (
                             <Fade {...TransitionProps} timeout={200}>
                                 <div className="tooltip">
-                                    <Link className="tooltip-item" href="https://github.com/ScanDAO-Money/ScanDAO-frontend" target="_blank">
+                                    <Link className="tooltip-item" href="https://github.com/ScanDAO/scandao-frontend" target="_blank">
                                         <SvgIcon color="primary" component={GitHub} />
                                         <p>GitHub</p>
                                     </Link>
-                                    <Link className="tooltip-item" href="https://twitter.com/ScanDAO" target="_blank">
+                                    <Link className="tooltip-item" href="https://twitter.com/scandao_finance" target="_blank">
                                         <SvgIcon color="primary" component={Twitter} />
                                         <p>Twitter</p>
                                     </Link>

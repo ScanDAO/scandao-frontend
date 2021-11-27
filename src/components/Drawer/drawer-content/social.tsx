@@ -7,11 +7,11 @@ import { ReactComponent as Discord } from "../../../assets/icons/discord.svg";
 export default function Social() {
     return (
         <div className="social-row">
-            <Link href="https://github.com/ScanDAO-Money/ScanDAO-frontend" target="_blank">
+            <Link href="https://github.com/ScanDAO/scandao-frontend" target="_blank">
                 <SvgIcon color="primary" component={GitHub} />
             </Link>
 
-            <Link href="https://twitter.com/ScanDAO" target="_blank">
+            <Link href="https://twitter.com/scandao_finance" target="_blank">
                 <SvgIcon color="primary" component={Twitter} />
             </Link>
 
