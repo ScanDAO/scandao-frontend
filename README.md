@@ -1,4 +1,4 @@
-# [ScanDAO Frontend](https://app.scandao.xyz/)
+# [ScanDAO Frontend](https://app.scandao.com/)
 
 This is the front-end repo for ScanDAO.
 

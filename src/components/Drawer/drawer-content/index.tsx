@@ -38,7 +38,7 @@ function NavContent() {
     return (
         <div className="dapp-sidebar">
             <div className="branding-header">
-                <Link href="https://scandao.xyz" target="_blank">
+                <Link href="https://scandao.com" target="_blank">
                     <img alt="" src={ScanDAOIcon} />
                 </Link>
 
