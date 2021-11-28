@@ -5,6 +5,7 @@ import "./dashboard.scss";
 import { Skeleton } from "@material-ui/lab";
 import { IReduxState } from "../../store/slices/state.interface";
 import { IAppSlice } from "../../store/slices/app-slice";
+import { getApy } from "src/helpers/getApy";
 
 function Dashboard() {
     const isAppLoading = useSelector<IReduxState, boolean>(state => state.app.loading);
@@ -84,13 +85,7 @@ function Dashboard() {
                         <Grid item lg={6} md={6} sm={6} xs={12}>
                             <div className="dashboard-card">
                                 <p className="card-title">APY</p>
-                                <p className="card-value">
-                                    {isAppLoading ? (
-                                        <Skeleton width="250px" />
-                                    ) : (
-                                        `${Number(trimmedStakingAPY) < 9123744263767 ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY)) : "9123744263767+"}%`
-                                    )}
-                                </p>
+                                <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : getApy()}</p>
                             </div>
                         </Grid>
 

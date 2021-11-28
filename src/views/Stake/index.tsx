@@ -12,6 +12,7 @@ import { IReduxState } from "../../store/slices/state.interface";
 import { messages } from "../../constants/messages";
 import classnames from "classnames";
 import { warning } from "../../store/slices/messages-slice";
+import { getApy } from "src/helpers/getApy";
 
 function Stake() {
     const dispatch = useDispatch();
@@ -114,18 +115,7 @@ function Stake() {
                                     <Grid item xs={12} sm={4} md={4} lg={4}>
                                         <div className="stake-card-apy">
                                             <p className="stake-card-metrics-title">APY</p>
-                                            <p className="stake-card-metrics-value">
-                                                {stakingAPY ? (
-                                                    <>
-                                                        {Number(trimmedStakingAPY) < 9123744263767
-                                                            ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))
-                                                            : "9123744263767+"}
-                                                        %
-                                                    </>
-                                                ) : (
-                                                    <Skeleton width="150px" className="stake-card-skeleton" />
-                                                )}
-                                            </p>
+                                            <p className="stake-card-metrics-value">{stakingAPY ? <>{getApy()}</> : <Skeleton width="150px" className="stake-card-skeleton" />}</p>
                                         </div>
                                     </Grid>
 

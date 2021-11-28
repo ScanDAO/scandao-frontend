@@ -6,6 +6,7 @@ import { Grid, InputAdornment, OutlinedInput, Zoom, Slider } from "@material-ui/
 import { IReduxState } from "../../store/slices/state.interface";
 import { trim } from "../../helpers";
 import { Skeleton } from "@material-ui/lab";
+import { getApy } from "src/helpers/getApy";
 
 function Calculator() {
     const isAppLoading = useSelector<IReduxState, boolean>(state => state.app.loading);
@@ -93,18 +94,7 @@ function Calculator() {
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <div className="calculator-card-tvl">
                                             <p className="calculator-card-metrics-title">Current APY</p>
-                                            <p className="calculator-card-metrics-value">
-                                                {isAppLoading ? (
-                                                    <Skeleton width="100px" />
-                                                ) : (
-                                                    <>
-                                                        {Number(trimmedStakingAPY) < 9123744263767
-                                                            ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))
-                                                            : "9123744263767+"}
-                                                        %
-                                                    </>
-                                                )}
-                                            </p>
+                                            <p className="calculator-card-metrics-value">{isAppLoading ? <Skeleton width="100px" /> : <>{getApy()}</>}</p>
                                         </div>
                                     </Grid>
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
