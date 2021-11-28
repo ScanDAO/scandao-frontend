@@ -116,7 +116,12 @@ function Stake() {
                                             <p className="stake-card-metrics-title">APY</p>
                                             <p className="stake-card-metrics-value">
                                                 {stakingAPY ? (
-                                                    <>{Number(trimmedStakingAPY) < 999999999 ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY)) : "999999999+"}%</>
+                                                    <>
+                                                        {Number(trimmedStakingAPY) < 9123744263767
+                                                            ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))
+                                                            : "9123744263767+"}
+                                                        %
+                                                    </>
                                                 ) : (
                                                     <Skeleton width="150px" className="stake-card-skeleton" />
                                                 )}

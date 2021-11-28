@@ -58,8 +58,20 @@ function ScanMenu() {
                 {({ TransitionProps }) => (
                     <Fade {...TransitionProps} timeout={200}>
                         <div className="tooltip">
-                            <Link className="tooltip-item" href={`https://www.pancakeswap.finance/#/trade?inputCurrency=&outputCurrency=${SCAN_ADDRESS}`} target="_blank">
-                                <p>Buy on PancakeSwap</p>
+                            <Link
+                                className="tooltip-item"
+                                href={`https://pancakeswap.finance/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=${SCAN_ADDRESS}`}
+                                target="_blank"
+                            >
+                                <p>SCAN/BUSD</p>
+                            </Link>
+
+                            <Link
+                                className="tooltip-item"
+                                href={`https://pancakeswap.finance/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&outputCurrency=${SCAN_ADDRESS}`}
+                                target="_blank"
+                            >
+                                <p>SCAN/BNB</p>
                             </Link>
 
                             {isEthereumAPIAvailable && (

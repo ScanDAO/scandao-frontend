@@ -88,7 +88,7 @@ function Dashboard() {
                                     {isAppLoading ? (
                                         <Skeleton width="250px" />
                                     ) : (
-                                        `${Number(trimmedStakingAPY) < 999999999 ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY)) : "999999999+"}%`
+                                        `${Number(trimmedStakingAPY) < 9123744263767 ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY)) : "9123744263767+"}%`
                                     )}
                                 </p>
                             </div>

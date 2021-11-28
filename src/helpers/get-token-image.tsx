@@ -1,4 +1,4 @@
-import ScanImg from "../assets/tokens/TIME.svg";
+import ScanImg from "../assets/tokens/TIME.png";
 import DalImg from "../assets/tokens/MEMO.png";
 
 function toUrl(tokenPath: string): string {
