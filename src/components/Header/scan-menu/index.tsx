@@ -58,6 +58,11 @@ function ScanMenu() {
                 {({ TransitionProps }) => (
                     <Fade {...TransitionProps} timeout={200}>
                         <div className="tooltip">
+                            <div className="add-tokens" style={{ marginTop: 1 }}>
+                                <div className="divider" />
+                                <p className="add-tokens-title">BUY SCAN</p>
+                                <div className="divider" />
+                            </div>
                             <Link
                                 className="tooltip-item"
                                 href={`https://pancakeswap.finance/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=${SCAN_ADDRESS}`}
