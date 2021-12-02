@@ -10,13 +10,13 @@
     .cubes-top {
         opacity: 0.6;
         position: absolute;
-        top: -20px;
+        top: -7px;
 
         p {
             font-family: Courier;
             font-style: normal;
-            font-weight: normal;
-            font-size: 10px;
+            font-weight: bold;
+            font-size: 9px;
             color: $secondary-color;
             white-space: pre-wrap;
             user-select: none;
@@ -26,14 +26,14 @@
     .cubes-bottom {
         opacity: 0.6;
         position: absolute;
-        bottom: -70px;
-        right: -140px;
+        bottom: -40px;
+        right: -70px;
 
         p {
             font-family: Courier;
             font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
+            font-weight: bold;
+            font-size: 15px;
             color: $secondary-color;
             white-space: pre-wrap;
             user-select: none;
