@@ -59,11 +59,7 @@ function Footer() {
                     <div className="landing-footer-item-wrap">
                         <p className="landing-footer-item-title">Current APY</p>
                         <p className="landing-footer-item-value">
-                            {stakingAPY ? (
-                                <>{Number(trimmedStakingAPY) < 9123744263767 ? new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY)) : "9123744263767+"}%</>
-                            ) : (
-                                <Skeleton width="150px" />
-                            )}
+                            {stakingAPY ? <>{new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))}%</> : <Skeleton width="150px" />}
                         </p>
                     </div>
                 </Grid>

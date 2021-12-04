@@ -13,7 +13,7 @@ export const getApy = () => {
     const formatNumber = useCallback((num: number) => new Intl.NumberFormat("en-US").format(num), []);
 
     const numberTrimmedStakingAPY = Number(trimmedStakingAPY);
-    const apy = numberTrimmedStakingAPY < 9123744263767 ? `${formatNumber(numberTrimmedStakingAPY)}+%` : `${formatNumber(9123744263767)}+%`;
+    const apy = `${formatNumber(numberTrimmedStakingAPY)}+%`;
 
     return apy;
 };
